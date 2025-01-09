@@ -240,52 +240,52 @@ bw4 <- import(
 
 #--------------------------------------------------------------------------------
 ## Dataset 5
-fv4 <- import(
+fv5 <- import(
   here(
     "data",
     "fda",
-    dataset4),
+    dataset5),
   skip = 2) # Fruits and vegetables
 
-mpf4 <- import(
+mpf5 <- import(
   here(
     "data",
     "fda",
-    dataset3),
+    dataset5),
   which = 2,
   skip = 1) # Meat, Poultry, Fish and Other
 
 
-c4 <- import(
+c5 <- import(
   here(
     "data",
     "fda",
-    dataset3),
+    dataset5),
   which = 3,
   skip = 1) # Cheese
 
 
-mc4 <- import(
+mc5 <- import(
   here(
     "data",
     "fda",
-    dataset4),
+    dataset5),
   which = 4,
   skip = 1) # Milk and Cream
 
 
-bgp4 <- import(
+bgp5 <- import(
   here(
     "data",
     "fda",
-    dataset4),
+    dataset5),
   which = 5,
   skip = 1) # Bread, Grains and Potatoes
 
-bw4 <- import(
+bw5 <- import(
   here(
     "data",
     "fda",
-    dataset4),
+    dataset5),
   which = 6,
   skip = 1) # Bottled water
