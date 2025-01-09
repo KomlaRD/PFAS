@@ -142,7 +142,7 @@ fv3 <- import(
     dataset3),
   skip = 2) # Fruits and vegetables
 
-mpf2 <- import(
+mpf3 <- import(
   here(
     "data",
     "fda",
@@ -151,7 +151,7 @@ mpf2 <- import(
   skip = 1) # Meat, Poultry, Fish and Other
 
 
-c2 <- import(
+c3 <- import(
   here(
     "data",
     "fda",
@@ -160,7 +160,7 @@ c2 <- import(
   skip = 1) # Cheese
 
 
-mc2 <- import(
+mc3 <- import(
   here(
     "data",
     "fda",
@@ -169,7 +169,7 @@ mc2 <- import(
   skip = 1) # Milk and Cream
 
 
-bgp2 <- import(
+bgp3 <- import(
   here(
     "data",
     "fda",
@@ -178,10 +178,114 @@ bgp2 <- import(
   skip = 1) # Bread, Grains and Potatoes
 
 
-bw2 <- import(
+bw3 <- import(
   here(
     "data",
     "fda",
     dataset3),
+  which = 6,
+  skip = 1) # Bottled water
+
+#--------------------------------------------------------------------------------
+## Dataset 4
+fv4 <- import(
+  here(
+    "data",
+    "fda",
+    dataset4),
+  skip = 2) # Fruits and vegetables
+
+mpf4 <- import(
+  here(
+    "data",
+    "fda",
+    dataset3),
+  which = 2,
+  skip = 1) # Meat, Poultry, Fish and Other
+
+
+c4 <- import(
+  here(
+    "data",
+    "fda",
+    dataset3),
+  which = 3,
+  skip = 1) # Cheese
+
+
+mc4 <- import(
+  here(
+    "data",
+    "fda",
+    dataset4),
+  which = 4,
+  skip = 1) # Milk and Cream
+
+
+bgp4 <- import(
+  here(
+    "data",
+    "fda",
+    dataset4),
+  which = 5,
+  skip = 1) # Bread, Grains and Potatoes
+
+bw4 <- import(
+  here(
+    "data",
+    "fda",
+    dataset4),
+  which = 6,
+  skip = 1) # Bottled water
+
+#--------------------------------------------------------------------------------
+## Dataset 5
+fv4 <- import(
+  here(
+    "data",
+    "fda",
+    dataset4),
+  skip = 2) # Fruits and vegetables
+
+mpf4 <- import(
+  here(
+    "data",
+    "fda",
+    dataset3),
+  which = 2,
+  skip = 1) # Meat, Poultry, Fish and Other
+
+
+c4 <- import(
+  here(
+    "data",
+    "fda",
+    dataset3),
+  which = 3,
+  skip = 1) # Cheese
+
+
+mc4 <- import(
+  here(
+    "data",
+    "fda",
+    dataset4),
+  which = 4,
+  skip = 1) # Milk and Cream
+
+
+bgp4 <- import(
+  here(
+    "data",
+    "fda",
+    dataset4),
+  which = 5,
+  skip = 1) # Bread, Grains and Potatoes
+
+bw4 <- import(
+  here(
+    "data",
+    "fda",
+    dataset4),
   which = 6,
   skip = 1) # Bottled water
