@@ -33,14 +33,14 @@ fv1 <- import(
   here(
     "data",
     "fda",
-    "Analytical-Results-for-PFAS-in-2019-Total-Diet-Study-Sampling-(Parts-Per-Trillion)—Dataset-1_09292023.xlsx"),
+    dataset1),
   skip = 4) # Fruits and vegetables
 
 mpf1 <- import(
   here(
     "data",
     "fda",
-    "Analytical-Results-for-PFAS-in-2019-Total-Diet-Study-Sampling-(Parts-Per-Trillion)—Dataset-1_09292023.xlsx"),
+    dataset1),
   which = 2,
   skip = 1) # Meat, Poultry, Fish and Other
 
@@ -49,7 +49,7 @@ c1 <- import(
   here(
     "data",
     "fda",
-    "Analytical-Results-for-PFAS-in-2019-Total-Diet-Study-Sampling-(Parts-Per-Trillion)—Dataset-1_09292023.xlsx"),
+    dataset1),
   which = 3,
   skip = 1) # Cheese
 
@@ -58,7 +58,7 @@ mc1 <- import(
   here(
     "data",
     "fda",
-    "Analytical-Results-for-PFAS-in-2019-Total-Diet-Study-Sampling-(Parts-Per-Trillion)—Dataset-1_09292023.xlsx"),
+    dataset1),
   which = 4,
   skip = 1) # Milk and Cream
 
@@ -67,7 +67,7 @@ bgp1 <- import(
   here(
     "data",
     "fda",
-    "Analytical-Results-for-PFAS-in-2019-Total-Diet-Study-Sampling-(Parts-Per-Trillion)—Dataset-1_09292023.xlsx"),
+    dataset1),
   which = 5,
   skip = 1) # Bread, Grains and Potatoes
 
@@ -76,7 +76,7 @@ bw1 <- import(
   here(
     "data",
     "fda",
-    "Analytical-Results-for-PFAS-in-2019-Total-Diet-Study-Sampling-(Parts-Per-Trillion)—Dataset-1_09292023.xlsx"),
+    dataset1),
   which = 6,
   skip = 1) # Bottled water
 
