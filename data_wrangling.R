@@ -8,5 +8,9 @@ pacman::p_load(
 
 # Load USDA data
 usda <- import(here("data", "usda", "PFAS-Sampling-Data-2021-2022.xlsx"), which=2, skip = 1)
+
 # View first five rows
 head(usda)
+
+# Create report for USDA data
+create_report(usda, report_title = "USDA EDA")
