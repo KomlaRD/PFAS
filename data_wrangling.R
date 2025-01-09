@@ -7,6 +7,7 @@ pacman::p_load(
 )
 #--------------------------------------------------------------------------------------------
 # Load USDA data
+#--------------------------------------------------------------------------------------------
 usda <- import(here("data", "usda", "PFAS-Sampling-Data-2021-2022.xlsx"), which=2, skip = 1)
 
 # View first five rows
@@ -45,4 +46,61 @@ c1 <- import_data(dataset1, 3, 1)   # Cheese
 mc1 <- import_data(dataset1, 4, 1)  # Milk and Cream
 bgp1 <- import_data(dataset1, 5, 1) # Bread, Grains and Potatoes
 bw1 <- import_data(dataset1, 6, 1)  # Bottled water
+
+
+## Dataset 2
+fv2 <- import_data(dataset2, 1, 2)  # Fruits and vegetables
+mpf2 <- import_data(dataset2, 2, 1) # Meat, Poultry, Fish and Other
+c2 <- import_data(dataset2, 3, 1)   # Cheese
+mc2 <- import_data(dataset2, 4, 1)  # Milk and Cream
+bgp2 <- import_data(dataset2, 5, 1) # Bread, Grains and Potatoes
+bw2 <- import_data(dataset2, 6, 1)  # Bottled water
+
+## Dataset 3
+fv3 <- import_data(dataset3, 1, 2)  # Fruits and vegetables
+mpf3 <- import_data(dataset3, 2, 1) # Meat, Poultry, Fish and Other
+c3 <- import_data(dataset3, 3, 1)   # Cheese
+mc3 <- import_data(dataset3, 4, 1)  # Milk and Cream
+bgp3 <- import_data(dataset3, 5, 1) # Bread, Grains and Potatoes
+bw3 <- import_data(dataset3, 6, 1)  # Bottled water
+
+## Dataset 4
+fv4 <- import_data(dataset4, 1, 2)  # Fruits and vegetables
+mpf4 <- import_data(dataset4, 2, 1) # Meat, Poultry, Fish and Other
+c4 <- import_data(dataset4, 3, 1)   # Cheese
+mc4 <- import_data(dataset4, 4, 1)  # Milk and Cream
+bgp4 <- import_data(dataset4, 5, 1) # Bread, Grains and Potatoes
+bw4 <- import_data(dataset4, 6, 1)  # Bottled water
+
+## Dataset 5
+fv5 <- import_data(dataset5, 1, 2)  # Fruits and vegetables
+mpf5 <- import_data(dataset5, 2, 1) # Meat, Poultry, Fish and Other
+c5 <- import_data(dataset5, 3, 1)   # Cheese
+mc5 <- import_data(dataset5, 4, 1)  # Milk and Cream
+bgp5 <- import_data(dataset5, 5, 1) # Bread, Grains and Potatoes
+bw5 <- import_data(dataset5, 6, 1)  # Bottled water
+
+## Dataset 6
+fv6 <- import_data(dataset6, 1, 2)  # Fruits and vegetables
+mpf6 <- import_data(dataset6, 2, 1) # Meat, Poultry, Fish and Other
+c6 <- import_data(dataset6, 3, 1)   # Cheese
+mc6 <- import_data(dataset6, 4, 1)  # Milk and Cream
+bgp6 <- import_data(dataset6, 5, 1) # Bread, Grains and Potatoes
+bw6 <- import_data(dataset6, 6, 1)  # Bottled water
+
+## Dataset 7
+fv7 <- import_data(dataset7, 1, 2)  # Fruits and vegetables
+mpf7 <- import_data(dataset7, 2, 1) # Meat, Poultry, Fish and Other
+c7 <- import_data(dataset7, 3, 1)   # Cheese
+mc7 <- import_data(dataset7, 4, 1)  # Milk and Cream
+bgp7 <- import_data(dataset7, 5, 1) # Bread, Grains and Potatoes
+bw7 <- import_data(dataset7, 6, 1)  # Bottled water
+
+## Dataset 8
+fv8 <- import_data(dataset8, 1, 2)  # Fruits and vegetables
+mpf8 <- import_data(dataset8, 2, 1) # Meat, Poultry, Fish and Other
+c8 <- import_data(dataset8, 3, 1)   # Cheese
+mc8 <- import_data(dataset8, 4, 1)  # Milk and Cream
+bgp8 <- import_data(dataset8, 5, 1) # Bread, Grains and Potatoes
+bw8 <- import_data(dataset8, 6, 1)  # Bottled water
 
