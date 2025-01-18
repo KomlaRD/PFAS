@@ -65,20 +65,12 @@ bgp3 <- import_data(dataset3, 5, 1) # Bread, Grains and Potatoes
 bw3 <- import_data(dataset3, 6, 1)  # Bottled water
 
 ## Dataset 4
-fv4 <- import_data(dataset4, 1, 2)  # Fruits and vegetables
-mpf4 <- import_data(dataset4, 2, 1) # Meat, Poultry, Fish and Other
-c4 <- import_data(dataset4, 3, 1)   # Cheese
-mc4 <- import_data(dataset4, 4, 1)  # Milk and Cream
-bgp4 <- import_data(dataset4, 5, 1) # Bread, Grains and Potatoes
-bw4 <- import_data(dataset4, 6, 1)  # Bottled water
+fg4 <- import_data(dataset4, 1, 4)  # All food groups
+bw4 <- import_data(dataset4, 2, 1) # Bottled water
 
 ## Dataset 5
-fv5 <- import_data(dataset5, 1, 2)  # Fruits and vegetables
-mpf5 <- import_data(dataset5, 2, 1) # Meat, Poultry, Fish and Other
-c5 <- import_data(dataset5, 3, 1)   # Cheese
-mc5 <- import_data(dataset5, 4, 1)  # Milk and Cream
-bgp5 <- import_data(dataset5, 5, 1) # Bread, Grains and Potatoes
-bw5 <- import_data(dataset5, 6, 1)  # Bottled water
+fg5 <- import_data(dataset5, 1, 3)  # All food groups
+bw5 <- import_data(dataset5, 2, 1) # Bottled water
 
 ## Dataset 6
 fv6 <- import_data(dataset6, 1, 2)  # Fruits and vegetables
