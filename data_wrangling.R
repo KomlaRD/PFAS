@@ -73,12 +73,8 @@ fg5 <- import_data(dataset5, 1, 3)  # All food groups
 bw5 <- import_data(dataset5, 2, 1) # Bottled water
 
 ## Dataset 6
-fv6 <- import_data(dataset6, 1, 2)  # Fruits and vegetables
-mpf6 <- import_data(dataset6, 2, 1) # Meat, Poultry, Fish and Other
-c6 <- import_data(dataset6, 3, 1)   # Cheese
-mc6 <- import_data(dataset6, 4, 1)  # Milk and Cream
-bgp6 <- import_data(dataset6, 5, 1) # Bread, Grains and Potatoes
-bw6 <- import_data(dataset6, 6, 1)  # Bottled water
+fg6 <- import_data(dataset6, 1, 3)  # All food groups
+bw6 <- import_data(dataset6, 2, 1) # Bottled water
 
 ## Dataset 7
 fv7 <- import_data(dataset7, 1, 2)  # Fruits and vegetables
