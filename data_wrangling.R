@@ -128,6 +128,47 @@ fv8 <- dfs8[[2]]
 med8 <- dfs8[[3]]
 
 
-#-------------------------------------------------------------------------------------------------
-# 2: Re-arrange the PFAS columns in all the datasets to have the same order as 
+#------------------------------------
+# Rename the first column as Food
+#------------------------------------
+rename_first_columnn <- function(df) {
+  colnames(df)[1] <- "Food"
+  return(df)
+}
+
+dfs8 <- list(bg8, fv8, med8)
+dfs8 <- lapply(dfs8, rename_first_columnn)
+
+bg8 <- dfs8[[1]]
+fv8 <- dfs8[[2]]
+med8 <- dfs8[[3]]
+
+#-----------------------------------------------------------------------------
+# : Re-arrange the PFAS columns in all the datasets to have the same order as 
 # the FDA TDS  dataset 8
+#-----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
