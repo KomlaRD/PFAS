@@ -99,4 +99,15 @@ clean_colnames <- function(df) {
   return(df)
 }
 
-# 2: Re-arrange the PFAS columns in all the datasets to have the same order as the FDA TDS  dataset 8
+## Dataset 8
+dfs8 <- list(bg8, fv8, med8)
+dfs8 <- lapply(dfs8, clean_colnames)
+
+bg8 <- dfs8[[1]]
+fv8 <- dfs8[[2]]
+med8 <- dfs8[[3]]
+
+
+#-------------------------------------------------------------------------------------------------
+# 2: Re-arrange the PFAS columns in all the datasets to have the same order as 
+# the FDA TDS  dataset 8
