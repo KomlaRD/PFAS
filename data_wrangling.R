@@ -88,19 +88,36 @@ med8 <- import_data(dataset8, 3, 2) # Meat, egg and diary
 
 
 ###-------------------------------------------------------- 
-# 1. Delete the MDL values, special symbols and whitespaces 
+# 1. Delete the MDL or LCMRL values, special symbols and whitespaces 
 # from the PFAS columns names
 #----------------------------------------------------------
 
 clean_colnames <- function(df) {
-  colnames(df) <- gsub("\\s*MDL\\s*=\\s*\\d+"," ", colnames(df)) # Remove MDL number
-  colnames(df) <- gsub("[*+†]", " ", colnames(df)) # Remove special symbols
-  colnames(df) <- trimws(colnames(df)) # Remove leading/trailing whitepace
+  # Remove MDL number
+  colnames(df) <- gsub("\\s*MDL\\s*=\\s*\\d+"," ", colnames(df)) 
+  
+  # Remove LCMRL number in decimals and not determined
+  colnames(df) <- gsub("\\s*LCMRL\\s*=\\s*[0-9]+", "", colnames(df))
+  ## Decimal numbers
+  colnames(df) <- gsub("\\s*LCMRL\\s*=\\s*[0-9]+\\.[0-9]{1,2}", " ", colnames(df))
+  
+  ## Not detemined with or without asterisks
+  colnames(df) <- gsub("\\s*LCMRL\\s*=\\s*Not\\s*Determined\\**", " ", colnames(df))
+  
+  # Remove special symbols
+  colnames(df) <- gsub("[*+†]", " ", colnames(df)) 
+  # Remove leading/trailing white space
+  colnames(df) <- trimws(colnames(df)) 
+
   return(df)
 }
 
 ## Dataset 7
+dfs7 <- list(fg7, bw7)
+dfs7 <- lapply(dfs7, clean_colnames)
 
+fg7 <- dfs7[[1]]
+bw7 <- dfs7[[2]]
 
 ## Dataset 8
 dfs8 <- list(bg8, fv8, med8)
