@@ -87,10 +87,16 @@ med8 <- import_data(dataset8, 3, 2) # Meat, egg and diary
 
 
 
-# 1. Delete the MDL valus from the PFAS columns names
+###-------------------------------------------------------- 
+# 1. Delete the MDL values, special symbols and whitespaces 
+# from the PFAS columns names
+#----------------------------------------------------------
 
 clean_colnames <- function(df) {
-  
+  colnames(df) <- gsub("\\s*MDL\\s*=\\s*\\d+"," ", colnames(df)) # Remove MDL number
+  colnames(df) <- gsub("[*+†]", " ", colnames(df)) # Remove special symbols
+  colnames(df) <- trimws(colnames(df)) # Remove leading/trailing whitepace
+  return(df)
 }
 
 # 2: Re-arrange the PFAS columns in all the datasets to have the same order as the FDA TDS  dataset 8
