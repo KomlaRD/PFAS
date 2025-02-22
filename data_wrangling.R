@@ -81,5 +81,16 @@ fg7 <- import_data(dataset7, 1, 3)  # All food groups
 bw7 <- import_data(dataset7, 2, 1) # Bottled water
 
 ## Dataset 8
-med8 <- import_data(dataset8, 1, 3)  # Meat, Eggs and Dairy
+bg8 <- import_data(dataset8, 1, 4)  # Bread and grains
+fv8 <- import_data(dataset8, 2, 2) # Fruit and vegetables
+med8 <- import_data(dataset8, 3, 2) # Meat, egg and diary
 
+
+
+# 1. Delete the MDL valus from the PFAS columns names
+
+clean_colnames <- function(df) {
+  
+}
+
+# 2: Re-arrange the PFAS columns in all the datasets to have the same order as the FDA TDS  dataset 8
